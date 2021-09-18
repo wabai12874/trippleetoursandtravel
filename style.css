@@ -1,27 +1,27 @@
 body {
   font-family: "Roboto", sans-serif;
   margin: 0;
-
 }
 html{
   scroll-behavior: smooth;
 }
-
 
 h1 {
   padding: 8px;
   background: transparent;
   border-radius: 8px;
   margin: 0;
-  font-size: 90px;
-  text-align: center;
+  font-size: 60px;
   font-family: 'Montserrat', sans-serif;
 }
-#p1{
-  margin-top: -30px;
-}
+
 p {
   line-height: 1.5;
+}
+#list1{
+  line-height: 1.5;
+  font-family: 'Montserrat', sans-serif;
+  text-align: left;
 }
 
 main {
@@ -31,7 +31,6 @@ main {
 a {
   text-decoration: none;
   color: black;
-  margin-left: 20px;
 }
 
 a:hover {
@@ -58,13 +57,12 @@ textarea:focus {
 /* Banner */
 
 #banner {
-  height: 100vh;
-  width: 100vw;
+  height: 60vh;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-image: url("img/bkg1.png");
+  background: rgba(0, 0, 0, 0) url("img/bkg1.png");
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -81,6 +79,11 @@ textarea:focus {
   font-size: 24px;
   position: absolute;
   top: 470px;
+}
+.about-us{
+  font-family: 'Montserrat', sans-serif;
+  text-align: left;
+  margin: 10px;
 }
 
 
@@ -100,23 +103,12 @@ textarea:focus {
   height: 48px;
   width: 100%;
 }
-#about{
-  font-family: 'Montserrat', sans-serif;
-  font-size: 18px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
 
 /* Navigation */
-#section1{
-  background-image: url("img/bkgmain.png");
-  background-repeat: no-repeat;
-}
+
 nav {
   height: 72px;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.75);
   width: 100%;
   margin: 0;
   position: fixed;
@@ -131,7 +123,7 @@ nav {
 
 nav a {
   padding: 0 32px;
-  color: grey;
+  color: white;
   transition: 0.4s;
 }
 
@@ -150,14 +142,14 @@ nav ul {
 }
 
 .active {
-  color: white;
+  color: gray;
 }
 
 #logo-img {
   display: flex;
   height: 100%;
-  background: transparent;
-  padding: 2 1px;
+  background: black;
+  padding: 0 32px;
   align-items: center;
   color: white;
   transition: 0.4s;
@@ -168,14 +160,14 @@ nav ul {
 }
 
 #logo-img:hover {
-  background: transparent;
+  background: black;
 }
 
 #menu-icon {
   height: 100%;
   font-size: 28px;
   padding: 0 4px;
-  color: #eee;
+  color: white;
   display: none;
   align-items: center;
 }
@@ -526,8 +518,6 @@ footer #social-media-footer ul li:hover a .fa-github {
 
 
 
-
-
 /* Media Queries */
 
 @media (max-width: 900px) {
@@ -561,15 +551,6 @@ footer #social-media-footer ul li:hover a .fa-github {
   main {
     width: 95%;
   }
-  #p1{
-    font-size: 30px !important;
-    margin-top: -10px;
-  }
-  #h1{
-    font-size: 75px !important;
-  }
-
-
 
   section {
     flex-direction: column;
@@ -617,7 +598,6 @@ footer #social-media-footer ul li:hover a .fa-github {
     font-size: 48px;
   }
 
-
   #banner h3 {
     font-size: 20px;
   }
@@ -638,7 +618,6 @@ footer #social-media-footer ul li:hover a .fa-github {
   .card {
     width: 45%;
   }
-
   .card .card-image img {
     width: 100%;
   }
@@ -648,5 +627,4 @@ footer #social-media-footer ul li:hover a .fa-github {
   main {
     width: 85%;
   }
-
 }

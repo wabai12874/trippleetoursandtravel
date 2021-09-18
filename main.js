@@ -23,6 +23,7 @@ menuIcon.addEventListener('click', function () {
   }
 })
 
+
 //function for images to slide
 
 var i = 0;
@@ -45,4 +46,5 @@ function changePicture() {
 }
 
 window.onload = changePicture;
+
 
