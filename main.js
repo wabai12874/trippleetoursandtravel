@@ -23,3 +23,26 @@ menuIcon.addEventListener('click', function () {
   }
 })
 
+//function for images to slide
+
+var i = 0;
+var images = [];
+var slideTime = 5000; // 3 seconds
+
+images[0] = 'img/bkg1.png';
+images[1] = 'img/bkg2.png';
+images[2] = 'img/bkg3.png';
+
+function changePicture() {
+  document.getElementById("banner").style.backgroundImage = "url(" + images[i] + ")";
+
+  if (i < images.length - 1) {
+    i++;
+  } else {
+    i = 0;
+  }
+  setTimeout(changePicture, slideTime);
+}
+
+window.onload = changePicture;
+
