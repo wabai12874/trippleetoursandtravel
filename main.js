@@ -33,6 +33,11 @@ var slideTime = 5000; // 3 seconds
 images[0] = 'img/bkg1.png';
 images[1] = 'img/bkg2.png';
 images[2] = 'img/bkg3.png';
+images[3] = 'img/bkg4.png';
+images[4] = 'img/bkg5.png';
+images[5] = 'img/bkg6.png';
+
+
 
 function changePicture() {
   document.getElementById("banner").style.backgroundImage = "url(" + images[i] + ")";
@@ -46,5 +51,10 @@ function changePicture() {
 }
 
 window.onload = changePicture;
+
+
+
+
+
 
 
